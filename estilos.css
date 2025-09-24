@@ -3,11 +3,28 @@
   --color-fondo: #000000;
   --color-tipografia: #000000;
   --color-fondo-post: #f8f8ff;
+  --color-footer: #37c6c0;
   --tipografia-post: "Roboto", sans-serif;
 }
 
 body {
   background-color: var(--color-fondo);
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenido-principal {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .post {
@@ -17,7 +34,7 @@ body {
   width: 25rem;
   margin: 2rem auto;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 3px;
   overflow: hidden;
 }
 .post-encabezado {
@@ -30,7 +47,7 @@ body {
 .post-encabezado .info {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .post-encabezado h5,
@@ -46,8 +63,40 @@ body {
   margin-bottom: 10px;
 }
 
+.post-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.left-icons {
+  display: flex;
+  gap: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
 .post-body {
   font-size: small;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  padding: 0 0.5rem;
+}
+
+.footer-personal {
+  background-color: var(--color-footer);
+  font-family: var(--tipografia-post);
+  color: var(--color-fondo-post);
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-top: auto;
+}
+
+.footer-personal a {
+  color: inherit;
+  text-decoration: underline;
 }
