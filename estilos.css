@@ -1,0 +1,53 @@
+:root {
+  /* Sistema de colores */
+  --color-fondo: #000000;
+  --color-tipografia: #000000;
+  --color-fondo-post: #f8f8ff;
+  --tipografia-post: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--color-fondo);
+}
+
+.post {
+  background-color: var(--color-fondo-post);
+  font-family: var(--tipografia-post);
+  color: var(--color-tipografia);
+  width: 25rem;
+  margin: 2rem auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.post-encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+}
+
+.post-encabezado .info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.post-encabezado h5,
+.post-encabezado p {
+  margin: 0;
+  line-height: 1.2;
+  font-size: small;
+}
+
+.post-imagen img {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.post-body {
+  font-size: small;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
