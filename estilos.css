@@ -1,9 +1,10 @@
 :root {
   /* Sistema de colores */
-  --color-fondo: #000000;
+  --color-fondo: #e6e6eb;
   --color-tipografia: #000000;
   --color-fondo-post: #f8f8ff;
   --color-footer: #37c6c0;
+  --color-hover: #e6e6eb;
   --tipografia-post: "Roboto", sans-serif;
 }
 
@@ -20,7 +21,7 @@ body {
   flex-direction: column;
 }
 
-.contenido-principal {
+.post-principal {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -63,6 +64,7 @@ body {
   margin-bottom: 10px;
 }
 
+
 .post-icons {
   display: flex;
   justify-content: space-between;
@@ -70,6 +72,16 @@ body {
   padding: 0.5rem 0.75rem;
   font-size: 1rem;
   margin-bottom: 0.5rem;
+}
+
+.post-icons i {
+  color: #222;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.post-icons i:hover {
+  color: var(--color-hover);
 }
 
 .left-icons {
